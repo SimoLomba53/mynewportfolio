@@ -135,6 +135,77 @@ body,html{
     transform: translateY(-3px);
 }
 
-.menu-bar[data-position="top"] {
+.menu-bar[data-position="bottom"] {
     transform: translateY(3px);
+}
+
+.menu-toggle-opened .menu-bar[data-position="top"]{
+   transform: translateY(0) rotate(45deg) scaleX(1.05);
+}
+
+.menu-toggle-opened .menu-bar[data-position="bottom"] {
+    transform: translateY(0) rotate(-45deg) scaleX(1.05);
+}
+
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    pointer-events: none;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    /*clip-path: polygon(0% 100%,100% 100%,100% 100%,0% 100%);*/
+}
+
+.col{
+    flex: 1;
+}
+
+.col-2{
+    flex: 2;
+}
+
+.col{
+    position: relative;
+    height: 100%;
+    padding: 10em 2em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.link{
+    position: relative;
+    /*transform: translateY(30px);
+    opacity: 0;*/
+}
+
+.link a{
+    text-decoration: none;
+    color: white;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+    line-height: 125%;
+}
+
+.videowrapper{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: black;
+    overflow: hidden;
+    padding: 2em;
+    /*clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);*/
+}
+
+.videowrapper video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }

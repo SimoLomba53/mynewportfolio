@@ -228,3 +228,19 @@ body,html{
   font-size: 12px;
   font-weight: 400;
 }
+
+header h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 500px;
+    font-weight: lighter;
+    line-height: 100px;
+    height: 400px;
+}
+
+header h1 span{
+    position: relative;
+    display: inline-block;
+    transform: scale(0.75) translateY(500px) rotateY(90deg);
+    transform-origin: bottom;
+}

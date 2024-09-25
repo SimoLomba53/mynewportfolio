@@ -114,6 +114,9 @@ body,html{
     height: 30px;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-toggle:hover .hamburger,
@@ -197,7 +200,7 @@ body,html{
 
 .videowrapper{
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 9/16;
     background-color: black;
     overflow: hidden;
     padding: 2em;
@@ -208,4 +211,20 @@ body,html{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.socials{
+    width: 50%;
+    display: flex;
+    gap: 2em;
+}
+
+.socials .sub-col p{
+  position: relative;
+  color: #fff;
+  /*transform: translateY(30px);
+  opacity: 0;*/
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
 }

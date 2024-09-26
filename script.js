@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         gsap.to(menu, {
             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-            ease : "hop",
+            ease: "hop",
             duration: 1.5,
             onStart: () => {
                 menu.computedStyleMap.pointerEvents = "all";

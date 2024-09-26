@@ -1,6 +1,7 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
+    
     gsap.registerPlugin(CustomEase);
 
     CustomEase.create(

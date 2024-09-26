@@ -214,7 +214,7 @@ body,html{
 }
 
 .socials{
-    width: 50%;
+    width: 20%;
     display: flex;
     gap: 2em;
 }

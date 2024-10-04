@@ -96,6 +96,7 @@ body, html {
 .link a{
     text-decoration: none;
     color: black;
+    
 }
 
 .link.show {

@@ -30,6 +30,8 @@ body, html {
     color: black;
 }
 
+
+
 .menu-toggle {
     position: fixed;
     top: 2em;
@@ -144,8 +146,8 @@ body, html {
 }
 
 .scroll-item {
-    flex: 0 0 300px; /* Larghezza fissa per ogni elemento */
-    height: 60%; /* Altezza completa */
+    flex: 0 0 800px; /* Larghezza fissa per ogni elemento */
+    height:400px; /* Altezza completa */
     background-color: #4CAF50; /* Colore di sfondo */
     color: white; /* Colore del testo */
     display: flex;
@@ -155,4 +157,41 @@ body, html {
     margin-right: 20px; /* Spazio tra gli elementi */
     border-radius: 10px; /* Rende gli angoli arrotondati */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombra per un effetto sollevato */
+}
+
+.primoitem{
+    background-image: url(gardetto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secondoitem{
+    background-image: url(gharbicover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.terzoitem{
+    background-image: url(autolombardi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*CONTAINER CONTACT*/
+
+.containercontact{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+
+
+.bio{
+    height: 100vh;
+    background-image: url(backbio.png);
+}
+
+.whatido{
+    height: 100vh;
 }

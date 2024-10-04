@@ -126,13 +126,17 @@ body, html {
 
 /*PROGETTI*/
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+
+.containerproject{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
 }
 
 .horizontal-scroll-container {
     display: flex;
+    align-items: center;
+    justify-content: center ;
     overflow-x: auto; /* Abilita lo scrolling orizzontale */
     white-space: nowrap; /* Impedisce la rottura della riga */
     height: 100vh; /* Altezza della finestra */
@@ -140,7 +144,7 @@ body {
 
 .scroll-item {
     flex: 0 0 300px; /* Larghezza fissa per ogni elemento */
-    height: 100%; /* Altezza completa */
+    height: 60%; /* Altezza completa */
     background-color: #4CAF50; /* Colore di sfondo */
     color: white; /* Colore del testo */
     display: flex;

@@ -1,68 +1,21 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
-    
-    gsap.registerPlugin(CustomEase);
-
-    CustomEase.create(
-       "hop",
-       "M0,C0.354,0 0.464,0.133 0.498,0.502 0.532,0.872 0.651,1 1,1"
-    );
-
     const menuToggle = document.querySelector(".menu-toggle");
     const menu = document.querySelector(".menu");
     const links = document.querySelectorAll(".link");
-    const socialLinks = document.querySelectorAll(".socials p");
-    let isAnimating = false;
-
     
-   const splitTextIntoSpans = (selector) => {
-    let elements = document.querySelectorAll(selector);
-    elements.forEach((element) => {
-       let text = element.innerText;
-       let splitText = text
-       .split("")
-       .map(function (char){
-          return `<span>${char === "" ? "&nbsp;&nbsp;" : char}</span>`;
-       })
-    .join("");
-    element.innerHTML = splitText;
-
-    });
-   };
-
-   splitTextIntoSpans(".header h1")
-
-
-   .menuToggle.addEventListener("click", () => {
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
         
-      if (isAnimating) return;
-
-      if (menuToggle.classList.contains("closed")){
-        menuToggle.classList.remove("closed");
-        menuToggle.classList.add("opened");
-
-        isAnimating = true;
-
-        gsap.to(menu, {
-            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-            ease: "hop",
-            duration: 1.5,
-            onStart: () => {
-                menu.computedStyleMap.pointerEvents = "all";
-            },
-            onComplete: () => {
-                isAnimating = false;
-            }
-        })
-
-      }else{
-        menuToggle.classList.remove("opened");
-        menuToggle.classList.add("closed");
-
-        isAnimating= true;
-      }
-
-
-   });
+        if (menu.classList.contains("active")) {
+            links.forEach((link, index) => {
+                setTimeout(() => {
+                    link.classList.add("show");
+                }, index * 100); // Delay based on index
+            });
+        } else {
+            links.forEach((link) => {
+                link.classList.remove("show");
+            });
+        }
+    });
 });

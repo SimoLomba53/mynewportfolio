@@ -20,11 +20,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
-const scrollContainer = document.querySelector('.containerproject');
-
-scrollContainer.addEventListener('scroll', () => {
-    // Calcola il valore di scroll orizzontale in base allo scroll verticale
-    const scrollTop = scrollContainer.scrollTop;
-    scrollContainer.scrollLeft = scrollTop; // Sincronizza scroll orizzontale
-});

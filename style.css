@@ -135,22 +135,22 @@ body, html {
 .containerproject{
     width: 100vw;
     height: 100vh;
-    background-color: #f2f2f2;
-    overflow-y: scroll;
+    background-color: #000000;
+    
 }
 
 .horizontal-scroll-container {
     display: flex;
     align-items: center;
     justify-content: center ;
-     /* Abilita lo scrolling orizzontale */
+    overflow-x: auto; /* Abilita lo scrolling orizzontale */
     white-space: nowrap; /* Impedisce la rottura della riga */
     height: 100vh; /* Altezza della finestra */
 }
 
 .scroll-item {
     flex: 0 0 800px; /* Larghezza fissa per ogni elemento */
-    height:400px; /* Altezza completa */
+    height:65vh; /* Altezza completa */
     background-color: #4CAF50; /* Colore di sfondo */
     color: white; /* Colore del testo */
     display: flex;
@@ -178,6 +178,20 @@ body, html {
     background-image: url(autolombardi.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.logoproject{
+    position: absolute;
+    top: 2em;
+    left: 2em;
+}
+
+.logoproject a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
 }
 
 /*CONTAINER CONTACT*/

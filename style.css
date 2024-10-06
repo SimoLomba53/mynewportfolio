@@ -149,8 +149,9 @@ body, html {
 }
 
 .scroll-item {
-    flex: 0 0 800px; /* Larghezza fissa per ogni elemento */
-    height:65vh; /* Altezza completa */
+    
+    width: 40vw!important;/* Larghezza relativa, puoi cambiarla */
+    aspect-ratio: 9 / 16;
     background-color: #4CAF50; /* Colore di sfondo */
     color: white; /* Colore del testo */
     display: flex;
@@ -158,7 +159,7 @@ body, html {
     justify-content: center; /* Centra orizzontalmente */
     font-size: 24px; /* Dimensione del testo */
     margin-right: 20px; /* Spazio tra gli elementi */
-    border-radius: 10px; /* Rende gli angoli arrotondati */
+   /* Rende gli angoli arrotondati */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombra per un effetto sollevato */
 }
 

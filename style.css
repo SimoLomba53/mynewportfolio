@@ -9,9 +9,11 @@ body, html {
     height: 100%;
     background-color: silver;
     font-family: "Circular Std";
+    
     background-image: url(back2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .logo,
@@ -134,13 +136,14 @@ body, html {
     width: 100vw;
     height: 100vh;
     background-color: #f2f2f2;
+    overflow-y: scroll;
 }
 
 .horizontal-scroll-container {
     display: flex;
     align-items: center;
     justify-content: center ;
-    overflow-x: auto; /* Abilita lo scrolling orizzontale */
+     /* Abilita lo scrolling orizzontale */
     white-space: nowrap; /* Impedisce la rottura della riga */
     height: 100vh; /* Altezza della finestra */
 }

@@ -134,6 +134,18 @@ body, html {
     
 }
 
+@media (max-width: 720px) {
+    .scroll-item {
+    
+        width: 50% !important;
+        aspect-ratio: 9 / 16;
+       
+        
+    }
+
+    
+}
+
 @media (max-width: 500px) {
     
     .col{
@@ -213,7 +225,7 @@ body, html {
 
 .scroll-item {
     
-    width: 1000px;
+    width: 25%;
     aspect-ratio: 9 / 16;
     background-color: #4CAF50; /* Colore di sfondo */
     color: white; /* Colore del testo */
@@ -375,6 +387,3 @@ nav{
 
 
 
-.projonebackphoto{
-    
-}

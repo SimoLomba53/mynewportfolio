@@ -143,6 +143,10 @@ body, html {
         
     }
 
+    .horizontal-scroll-container {
+        padding-top: 20vh;
+    }
+
     
 }
 
